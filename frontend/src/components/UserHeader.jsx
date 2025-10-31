@@ -1,7 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Bell, User, Search } from 'lucide-react';
 
-export const PolicyHolderHeader = () => {
+export const UserHeader = () => {
     return (
         <header className="fixed top-0 left-0 w-screen h-16 bg-indigo-600 text-white flex items-center justify-between px-4 sm:px-6 shadow-md z-50">
             {/* Left Section */}

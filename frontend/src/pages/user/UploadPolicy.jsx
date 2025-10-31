@@ -1,14 +1,15 @@
 import React from "react";
 import { UploadCloud, Clock } from 'lucide-react';
-import { PolicyHolderLayout } from '../../layout/policyHolderLayout';
+import { UserLayout } from '../../layout/UserLayout';
 
 export const UploadPolicy = () => {
     const tags = ["Health Insurance", "Motor Insurance", "Travel Insurance", "Home Insurance"];
 
     return (
-        <PolicyHolderLayout>
+        <UserLayout>
             <div className="w-full h-full px-4 sm:px-6 lg:px-8 flex justify-center items-start">
-                <div className="w-full max-w-2xl flex flex-col items-center py-12">
+                {/* Added mt-10 for subtle top spacing */}
+                <div className="w-full max-w-2xl flex flex-col items-center py-12 mt-10">
 
                     {/* Upload Card */}
                     <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-10 text-center border border-gray-100 w-full">
@@ -49,6 +50,6 @@ export const UploadPolicy = () => {
                     </div>
                 </div>
             </div>
-        </PolicyHolderLayout>
+        </UserLayout>
     );
 };
